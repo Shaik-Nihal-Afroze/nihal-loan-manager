@@ -9,7 +9,7 @@ This project is a full-stack **loan management system** designed to streamline l
 - **Frontend:** [https://your-frontend-link.vercel.app](https://loan-manager-credit-app.vercel.app)
 - **Backend:** [https://your-backend-link.onrender.com](https://loan-manager-credit-app-backend.onrender.com)
 
-> *(Replace with actual deployed links)*
+
 
 ---
 
@@ -104,8 +104,5 @@ Use these to test login flows:
 ⬇
 [ Dashboard stats update ✅ ]
 
-## 🗂️ Project Structure
 
-### Backend
-### frontend
 
