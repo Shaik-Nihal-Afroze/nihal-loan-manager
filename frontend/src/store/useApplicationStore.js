@@ -51,7 +51,7 @@ export const useApplicationStore = create((set,get) => ({
                 borrowersCount: response.data.borrowersCount,
             });
         } catch (error) {
-            console.error("Error fetching loan amount details:", error);
+            console.log("Error fetching loan amount details:", error);
         }
     },
     approveLoanAmount: async (id, amount) => {
@@ -63,7 +63,7 @@ export const useApplicationStore = create((set,get) => ({
                 borrowersCount: state.borrowersCount + 1,
             }));
         } catch (error) {
-            console.error("Error approving loan amount:", error);
+            console.log("Error approving loan amount:", error);
         }
     },
     

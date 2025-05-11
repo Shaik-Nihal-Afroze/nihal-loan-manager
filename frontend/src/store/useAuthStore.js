@@ -31,7 +31,7 @@ export const useAuthStore = create((set, get) => ({
       set({ authUser: res.data });
       toast.success("Account created successfully");
     } catch (error) {
-      toast.error(error.response.data.message);
+      console.error("Error fetching sigup controller:", error);
     } finally {
       set({ isSigningUp: false });
     }
@@ -45,7 +45,7 @@ export const useAuthStore = create((set, get) => ({
       toast.success("Logged in successfully");
 
     } catch (error) {
-      toast.error(error.response.data.message);
+      console.error("Error fetching login controller:", error);
     } finally {
       set({ isLoggingIn: false });
     }
@@ -57,7 +57,7 @@ export const useAuthStore = create((set, get) => ({
       set({ authUser: null });
       toast.success("Logged out successfully");
     } catch (error) {
-      toast.error(error.response.data.message);
+      console.error("Error fetching logout controller:", error);
     }
   },
 
@@ -66,7 +66,7 @@ export const useAuthStore = create((set, get) => ({
       const res = await axiosInstance.get("/auth/getallusers");
       set({ allUsers: res.data });
     } catch (error) {
-      toast.error(error.response.data.message);
+      console.error("Error fetching getusers controller:", error);
     }
   },
 

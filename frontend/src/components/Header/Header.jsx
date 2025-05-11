@@ -6,6 +6,7 @@ import "./header.css"
 const Header = () =>{
     const navigate = useNavigate();
     const {logout,authUser} = useAuthStore();
+
     const handleLogout = () => {
         logout();
         navigate('/login');
@@ -80,12 +81,12 @@ const Header = () =>{
                         </clipPath>
                         </defs>
                     </svg>
-                    <select className="select" disabled>
-                        <option className="select-options">{authUser.role}</option>
+                    <select className="select">
+                        <option className="select-options" disabled>{authUser.role}</option>
                         
                     </select>
                     <button className="logout-button1" onClick={handleLogout}>
-                        <img src="logout.png" className=""/>
+                        <img src="logout.png" className="images"/>
                     </button>
                     </div>   
             </div>
