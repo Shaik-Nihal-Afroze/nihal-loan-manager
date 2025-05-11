@@ -81,8 +81,8 @@ const Header = () =>{
                         </clipPath>
                         </defs>
                     </svg>
-                    <select className="select">
-                        <option className="select-options" disabled>{authUser.role}</option>
+                    <select className="select" disabled>
+                        <option className="select-options" >{authUser.role}</option>
                         
                     </select>
                     <button className="logout-button1" onClick={handleLogout}>
