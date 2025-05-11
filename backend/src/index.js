@@ -21,9 +21,15 @@ dotenv.config();
 
 app.use(express.json());
 app.use(cookieParser());
+
+const allowedOrigins = [
+  'http://localhost:5173',         // local frontend
+  'https://loan-manager-credit-app-backend.onrender.com', // optional for Render-origin requests
+];
+
 app.use(
   cors({
-    origin: "http://localhost:5173",
+    origin: allowedOrigins,
     credentials: true,
   })
 );

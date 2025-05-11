@@ -22,7 +22,7 @@ const UserPage = () => {
   const [userLoanDetails, setUserLoanDetails] = useState([]);
   const [displayForm, setDisplayForm] = useState(false)
 
-  const {authUser, logout} = useAuthStore();
+  const {authUser, checkAuth} = useAuthStore();
   const {getLoanApllications, loanApplicationsData,updateLoanApplicationStatus,createLoanApplication} = useApplicationStore();
 
   const getUserLoanDetails = () => {

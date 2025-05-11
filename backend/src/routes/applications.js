@@ -10,9 +10,9 @@ import { protectRoute } from '../middleware/protectedRoute.js';
 
 // Route to create a new loan application
 router.post('/applyloan', protectRoute, createLoanApplication);
-router.get("/getloanapplications", protectRoute, getLoanApplications);
+router.get("/getloanapplications",getLoanApplications);
 router.put("/updateapplicationstatus/:id", protectRoute, updateLoanApplicationStatus);
-router.get("/getloanamountdetails", protectRoute, getLoanAmountDetails);
+router.get("/getloanamountdetails",getLoanAmountDetails);
 router.put("/approveloanamount/:id", protectRoute, approveLoanAmount);
 
 export default router;
