@@ -1,4 +1,4 @@
-# 💼 Loan Manager (Community)
+# 💼 Loan Manager (Credit App)
 
 This project is a full-stack **loan management system** designed to streamline loan application, verification, and approval processes. It supports **role-based login for Users, Verifiers, and Admins**, and dynamically updates financial statistics based on application status.
 
